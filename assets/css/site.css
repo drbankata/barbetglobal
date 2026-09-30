@@ -110,6 +110,7 @@ button { font: inherit; cursor: pointer; }
 .nav a { display: block; padding: 12px 4px; border-bottom: 1px solid var(--line); font-weight: 500; color: var(--ink); }
 .nav a:hover, .nav a.active { color: var(--crimson); }
 .nav .nav-cta { margin-top: 14px; }
+.nav .nav-cta a.btn { display: flex; color: #fff; border-bottom: 0; padding: 12px 22px; }
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -538,7 +539,8 @@ button { font: inherit; cursor: pointer; }
   .nav a::after { content: ""; position: absolute; left: 9px; right: 9px; bottom: 2px; height: 2px; background: var(--crimson); transform: scaleX(0); transform-origin: left; transition: transform .25s; }
   .nav a:hover::after, .nav a.active::after { transform: scaleX(1); }
   .nav .nav-cta { margin: 0; }
-  .nav .nav-cta .btn { min-height: 42px; padding: 9px 18px; font-size: .9rem; }
+  .nav .nav-cta a.btn { display: inline-flex; min-height: 42px; padding: 9px 20px; font-size: .9rem; }
+  .nav .nav-cta a.btn::after { display: none; }
 }
 
 @media (min-width: 1150px) {
