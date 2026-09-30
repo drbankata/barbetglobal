@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Barbet</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@400;600&display=swap">
+  <style>
+    body{margin:0;min-height:100vh;display:grid;place-items:center;background:#fbf7ef;color:#16211c;font-family:"Public Sans",system-ui,sans-serif;padding:24px;text-align:center}
+    h1{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(2.4rem,9vw,4rem);color:#0f4d3a;margin:0 0 12px;line-height:1.05}
+    h1 em{color:#d33a2c}
+    p{color:#4a5a52;max-width:44ch;margin:0 auto 24px}
+    a{display:inline-flex;min-height:48px;align-items:center;padding:0 24px;border-radius:999px;background:#d33a2c;color:#fff;font-weight:600;text-decoration:none}
+    .bar{height:4px;width:120px;margin:0 auto 28px;border-radius:4px;background:linear-gradient(90deg,#0f4d3a,#f2b632,#d33a2c,#2b7bbf)}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="bar"></div>
+    <h1>This page has <em>moved on.</em></h1>
+    <p>The page you were looking for isn't here. The evidence, insights and ways to work with Barbet are all on the home page.</p>
+    <!-- Root-relative link works on the custom domain; the script below also handles the github.io preview path -->
+    <a id="home" href="/">Go to Barbet home</a>
+  </main>
+  <script>
+    if (location.hostname.endsWith("github.io")) document.getElementById("home").href = "/barbetglobal/";
+  </script>
+</body>
+</html>
